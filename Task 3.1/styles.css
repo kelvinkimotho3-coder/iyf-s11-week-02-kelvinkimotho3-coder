@@ -1,0 +1,66 @@
+/* ==========================================
+   1. RESET DEFAULT STYLES 
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   2. BASE TYPOGRAPHY 
+   ========================================== */
+body {
+    font-family: 'Inter', sans-serif; /* Google Font */
+    font-size: 16px;                  /* Base font size */
+    line-height: 1.6;                 /* Base line height */
+    color: #333333;                   /* Dark gray text for high readability */
+    background-color: #f8f9fa;        /* Light background color */
+}
+
+/* ==========================================
+   3. HEADING STYLES
+   ========================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    color: #111111;                   /* Darker shade for headings to stand out */
+    margin-bottom: 1rem;              /* Consistent bottom margin */
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;   /* 40px */
+    font-weight: 700;   /* Boldest */
+}
+
+h2 {
+    font-size: 2rem;     /* 32px */
+    font-weight: 600;   /* Semi-bold */
+}
+
+h3 {
+    font-size: 1.75rem;  /* 28px */
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.5rem;   /* 24px */
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1.25rem;  /* 20px */
+    font-weight: 400;   /* Normal weight for contrast */
+}
+
+h6 {
+    font-size: 1rem;     /* 16px */
+    font-weight: 400;
+    text-transform: uppercase; /* Extra variation to distinguish it */
+    letter-spacing: 0.05em;
+}
+
+/* Quick helper for paragraphs to keep spacing clean */
+p {
+    margin-bottom: 1.25rem;
+}
