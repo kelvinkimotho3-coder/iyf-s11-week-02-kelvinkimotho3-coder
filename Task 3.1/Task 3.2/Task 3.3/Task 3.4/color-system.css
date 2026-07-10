@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap' );
+
+:root {
+    /* --- Typography Variables (Task 3.3) --- */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --font-xs:   0.75rem;
+    --font-sm:   0.875rem;
+    --font-base: 1rem;
+    --font-lg:   1.125rem;
+    --font-xl:   1.25rem;
+    --font-2xl:  1.5rem;
+    --font-3xl:  1.875rem;
+    --font-4xl:  2.25rem;
+    --leading-tight:  1.2;
+    --leading-normal: 1.5;
+    --leading-loose:  1.75;
+    --weight-normal:   400;
+    --weight-semibold: 600;
+    --weight-bold:     700;
+    --weight-extrabold: 800;
+
+    /* --- Color Variables (Task 3.4) --- */
+    --color-primary: #2563eb;
+    --color-secondary: #8b5cf6;
+    --color-background: #ffffff;
+    --color-text: #1f2937;
+    --color-muted: #6b7280;
+    --color-primary-light: #bfdbfe;
+    --color-primary-dark: #1d4ed8;
+    --color-surface: #f3f4f6;
+    --color-border: #e5e7eb;
+    --color-white: #ffffff;
+    --color-black: #111827;
+}
+
+/* Body — combines typography + color */
+body {
+    font-family: var(--font-body);
+    font-size: var(--font-base);
+    font-weight: var(--weight-normal);
+    line-height: var(--leading-normal);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0; padding: 0;
+}
+
+/* Headings — typography font + color text */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: var(--weight-bold);
+    line-height: var(--leading-tight);
+    color: var(--color-text);
+    margin-top: 0; margin-bottom: 1rem;
+}
+h1 { font-size: var(--font-4xl); font-weight: var(--weight-extrabold); }
+h2 { font-size: var(--font-3xl); font-weight: var(--weight-bold); }
+h3 { font-size: var(--font-2xl); font-weight: var(--weight-semibold); }
+
+/* Body text */
+p { font-size: var(--font-base); margin-bottom: 1.25rem; }
+small, .text-sm { font-size: var(--font-sm); }
+small, .text-muted { color: var(--color-muted); }
+
+/* Links */
+a { color: var(--color-primary); text-decoration: underline; transition: color 0.2s ease; }
+a:hover { color: var(--color-primary-dark); }
+
+/* Buttons */
+.btn { display: inline-block; padding: 0.75rem 1.5rem; font-weight: 600; text-decoration: none; border-radius: 6px; cursor: pointer; transition: all 0.2s ease; border: 1px solid transparent; text-align: center; }
+.btn-primary { background-color: var(--color-primary); color: var(--color-white); }
+.btn-primary:hover { background-color: var(--color-primary-dark); }
+.btn-secondary { background-color: var(--color-secondary); color: var(--color-white); }
+.btn-outline { background-color: transparent; border: 2px solid var(--color-primary); color: var(--color-primary); }
+.btn-outline:hover { background-color: var(--color-primary-light); }
+
+/* Backgrounds */
+.bg-surface { background-color: var(--color-surface); }
+.bg-primary { background-color: var(--color-primary); color: var(--color-white); }
+.bg-muted { background-color: var(--color-muted); color: var(--color-white); }
