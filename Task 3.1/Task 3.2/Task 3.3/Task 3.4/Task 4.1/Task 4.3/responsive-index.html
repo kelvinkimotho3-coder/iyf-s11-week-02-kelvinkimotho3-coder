@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio — Task 4.3</title>
+    <link rel="stylesheet" href="combined-styles.css">
+    <link rel="stylesheet" href="flexbox-layout.css">
+    <link rel="stylesheet" href="responsive-layout.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('nav-toggle').addEventListener('click', () => {
+                document.getElementById('nav-links').classList.toggle('active');
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="navbar">
+        <a href="#" class="nav-logo">YourName.</a>
+        <button class="nav-toggle" id="nav-toggle">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home: Hero -->
+    <header class="hero-section" id="home">
+        <div class="hero-content">
+            <h1>Hello, I'm a Creative Developer</h1>
+            <p class="text-lg">I specialize in creating beautiful, usable, and professional websites using best-practice accessibility and the latest W3C web standards.</p>
+            <div>
+                <button class="btn btn-primary">View My Work</button>
+                <button class="btn btn-outline">Contact Me</button>
+            </div>
+        </div>
+        <div class="hero-image"><span>Hero Image</span></div>
+    </header>
+
+    <!-- Projects -->
+    <section id="projects" style="background-color: var(--color-white);">
+        <div style="text-align: center; padding: 3rem 20px;">
+            <h2>Selected Works</h2>
+            <p>Here are a few of my recent projects.</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Dashboard Redesign</h3>
+                    <p>A complete overhaul of a SaaS analytics platform, improving task completion rate by 40%.</p>
+                    <a href="#" class="text-primary">Read more &rarr;</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>E-commerce App</h3>
+                    <p>Developed a full-stack e-commerce application using React and Node.js.</p>
+                    <a href="#" class="text-primary">Read more &rarr;</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Mobile Banking UI</h3>
+                    <p>Designed a clean and secure mobile banking interface focusing on accessibility.</p>
+                    <a href="#" class="text-primary">Read more &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact" style="background-color: var(--color-surface);">
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <p>Have a project in mind? Send me a message.</p>
+            <form action="#" method="POST">
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <input type="text" placeholder="Subject">
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-sidebar">
+            <h3>Contact Info</h3>
+            <p><strong>Email:</strong>  
+kelvinkimotho3@gmail.com</p>
+            <p><strong>Location:</strong>  
+Nairobi Kenya, Nk</p>
+            <p><strong>Social:</strong>  
+
+                <a href="#">LinkedIn</a>  
+
+                <a href="#">GitHub</a>  
+
+                <a href="#">Twitter</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h4>About</h4>
+            <p style="color: rgba(255,255,255,0.7); font-size: var(--font-sm);">I am a creative developer and UX designer based in New York. I build scalable, accessible web applications.</p>
+        </div>
+        <div class="footer-column">
+            <h4>Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="#">kelvinkimotho3@gmail.com</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Twitter / X</a></li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <small>&copy; 2026 Kelvin Kimotho. All rights reserved.</small>
+        </div>
+    </footer>
+
+</body>
+</html>
