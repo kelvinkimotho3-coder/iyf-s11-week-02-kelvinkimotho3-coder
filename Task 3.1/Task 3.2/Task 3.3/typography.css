@@ -1,0 +1,79 @@
+/* 1. Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap' );
+
+/* 2. Define Typography Variables */
+:root {
+    /* Font Families */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+
+    /* Type Scale (from Type Scale Calculator) */
+    --font-xs: 0.75rem;    /* 12px */
+    --font-sm: 0.875rem;   /* 14px */
+    --font-base: 1rem;     /* 16px */
+    --font-lg: 1.125rem;   /* 18px */
+    --font-xl: 1.25rem;    /* 20px */
+    --font-2xl: 1.5rem;    /* 24px */
+    --font-3xl: 1.875rem;  /* 30px */
+    --font-4xl: 2.25rem;   /* 36px */
+    
+    /* Line Heights for Readability */
+    --leading-tight: 1.2;
+    --leading-normal: 1.5;
+    --leading-loose: 1.75;
+    
+    /* Font Weights */
+    --weight-normal: 400;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+}
+
+/* 3. Base Element Styling */
+body {
+    font-family: var(--font-body);
+    font-size: var(--font-base);
+    line-height: var(--leading-normal);
+    font-weight: var(--weight-normal);
+    color: #333333; /* Standard dark gray for better contrast */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: var(--weight-bold);
+    line-height: var(--leading-tight);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #111111;
+}
+
+h1 {
+    font-size: var(--font-4xl);
+}
+
+h2 {
+    font-size: var(--font-3xl);
+}
+
+h3 {
+    font-size: var(--font-2xl);
+}
+
+/* 5. Text Elements */
+p {
+    font-size: var(--font-base);
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+}
+
+small, .text-small {
+    font-size: var(--font-sm);
+    line-height: var(--leading-normal);
+}
+
+/* Extra utility for extra small text */
+.text-xs {
+    font-size: var(--font-xs);
+}
