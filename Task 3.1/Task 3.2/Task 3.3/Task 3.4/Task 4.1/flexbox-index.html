@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Flexbox Layout</title>
+    <!-- Previous systems -->
+    <link rel="stylesheet" href="combined-styles.css">
+    <link rel="stylesheet" href="flexbox-layout.css">
+</head>
+<body>
+
+    <!--Navigation Bar -->
+    <nav class="navbar">
+        <a href="#" class="nav-logo">YourName.</a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--Card Row -->
+    <div class="card-container" style="max-width: 1200px; margin: 0 auto; padding: 2rem 20px;">
+        <div class="card">
+            <div class="card-image">Image 1</div>
+            <div class="card-content">
+                <h3>Dashboard Redesign</h3>
+                <p>A complete overhaul of a SaaS analytics platform, improving task completion rate by 40%.</p>
+                <button class="btn btn-primary">View Case Study</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">Image 2</div>
+            <div class="card-content">
+                <h3>E-commerce App</h3>
+                <p>Full-stack e-commerce app using React and Node.js, handling 10k+ monthly transactions.</p>
+                <button class="btn btn-primary">View Case Study</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">Image 3</div>
+            <div class="card-content">
+                <h3>Mobile Banking UI</h3>
+                <p>Clean and secure mobile banking interface focusing on accessibility and micro-interactions.</p>
+                <button class="btn btn-primary">View Case Study</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h4>About</h4>
+            <p style="color: var(--color-muted); font-size: var(--font-sm);">I am a creative developer and UX designer based in New York. I build scalable, accessible web applications.</p>
+        </div>
+        <div class="footer-column">
+            <h4>Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="#">hello@yourname.com</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Twitter / X</a></li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <small>&copy; 2026 YourName. All rights reserved.</small>
+        </div>
+    </footer>
+
+</body>
+</html>

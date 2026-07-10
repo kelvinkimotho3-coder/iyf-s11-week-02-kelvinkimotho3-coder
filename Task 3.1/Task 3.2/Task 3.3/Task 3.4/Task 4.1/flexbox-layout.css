@@ -1,0 +1,137 @@
+/* ---- Navigation Bar ---- */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Logo left, Links right */
+    align-items: center;            /* Vertically centered */
+    padding: 1rem 2rem;
+    background-color: var(--color-text);
+    color: var(--color-white);
+}
+
+.nav-logo {
+    font-family: var(--font-heading);
+    font-size: var(--font-xl);
+    font-weight: var(--weight-bold);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;       /* Spacing between links */
+    list-style: none;
+    margin: 0; padding: 0;
+}
+
+.nav-links a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: var(--font-base);
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary-light);
+}
+
+/* Mobile Responsive Nav */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    .nav-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* ---- Card Row ---- */
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Evenly spaced */
+    gap: 1.5rem;
+    flex-wrap: wrap;                /* Wrap on smaller screens */
+    padding: 2rem 0;
+}
+
+.card {
+    flex: 1 1 300px;    /* Grow, shrink, base width */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    height: 200px;
+    background-color: var(--color-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-muted);
+    font-family: monospace;
+}
+
+.card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;                /* Ensures equal heights */
+}
+
+.card-content h3 { margin-top: 0; margin-bottom: 0.5rem; }
+.card-content p { color: var(--color-muted); flex: 1; } /* Pushes button to bottom */
+.card-content .btn { align-self: flex-start; margin-top: 1rem; }
+
+/* ---- Footer Layout ---- */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 4rem 2rem 2rem;
+    background-color: var(--color-surface);
+    margin-top: 4rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.footer-column {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h4 { color: var(--color-text); margin-bottom: 1rem; }
+
+.footer-column ul {
+    list-style: none;
+    padding: 0; margin: 0;
+}
+
+.footer-column ul li { margin-bottom: 0.5rem; }
+
+.footer-column ul a {
+    color: var(--color-muted);
+    text-decoration: none;
+    font-size: var(--font-sm);
+}
+
+.footer-column ul a:hover { color: var(--color-primary); }
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-muted);
+    font-size: var(--font-sm);
+}
