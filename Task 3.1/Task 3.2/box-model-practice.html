@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3.2: Box Model Mastery</title>
+    <style>
+        /* ==========================================
+           GLOBAL RESET
+           ========================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Crucial for Exercise 2 & 3 */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            padding: 40px;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+         .visual-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .base-box {
+            width: 150px;
+            height: 150px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .content-box {
+            background-color: #3498db; /* Demonstrating inner content */
+        }
+
+        .padding-box {
+            background-color: #2ecc71;
+            padding: 30px; /* Expands the clickable internal area */
+        }
+
+        .border-box {
+            background-color: #e67e22;
+            border: 10px solid #d35400; /* Visible external boundary */
+        }
+
+        .margin-box {
+            background-color: #9b59b6;
+            margin: 30px; /* Creates invisible push space around it */
+        }
+
+        
+        /* WHY IT WAS BROKEN: By default, browsers use 'content-box'. 
+           Width (300px) + Left Padding (20px) + Right Padding (20px) = 340px total.
+           
+           THE FIX: We apply `box-sizing: border-box;` (done in the global reset *). 
+           Now padding is included inside the 300px width.
+        */
+        .fixed-box {
+            width: 300px;
+            padding: 20px;
+            border: 5px solid #2c3e50; /* Added a border to prove it stays 300px */
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+        }
+
+        
+        .card {
+            width: 300px;       /* Exact card width total */
+            border: 1px solid gray; /* Exact border requested */
+            background-color: white;
+            border-radius: 4px;
+            overflow: hidden;   /* Ensures image corner radius fits card */
+        }
+
+        .card-image {
+            width: 100%;        /* Forces image to span full width of card */
+            height: 150px;
+            background-color: #bdc3c7; /* Placeholder color representing image */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+
+        .card-content {
+            padding: 20px;      /* Exact internal spacing requested */
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px; /* Exact spacing requested */
+            color: #111;
+        }
+
+        .card-description {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .card-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Task 3.2: Box Model Mastery Practice</h1>
+
+    <section>
+        <h2>Box Model Visualization</h2>
+        <div class="visual-container">
+            <div class="base-box content-box">Content Only</div>
+            <div class="base-box padding-box">With Padding</div>
+            <div class="base-box border-box">With Border</div>
+            <div class="base-box margin-box">With Margin</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Debugged Layout (Exactly 300px Wide)</h2>
+        <div class="fixed-box">
+            I am exactly 300px wide because of <code>box-sizing: border-box</code>!
+        </div>
+    </section>
+
+    <section>
+        <h2>Card Component</h2>
+        <div class="card">
+            <div class="card-image">Full-Width Image (100%)</div>
+            
+            <div class="card-content">
+                <h3 class="card-title">Card Title</h3>
+                <p class="card-description">
+                    This card component matches the exact layout parameters requested, including a strict width limit and accurate interior padding.
+                </p>
+                <button class="card-button">Read More</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
