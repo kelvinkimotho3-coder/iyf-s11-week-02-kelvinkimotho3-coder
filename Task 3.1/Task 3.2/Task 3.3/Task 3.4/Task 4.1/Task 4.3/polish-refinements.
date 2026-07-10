@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelvin Kimotho — Portfolio Polish & Refinement</title>
+    <link rel="stylesheet" href="combined-styles.css">
+    <link rel="stylesheet" href="flexbox-layout.css">
+    <link rel="stylesheet" href="responsive-layout.css">
+    <link rel="stylesheet" href="polish-refinement.css">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="navbar">
+        <a href="#" class="nav-logo">Kelvin K.</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Showcase -->
+    <div style="max-width: 1000px; margin: 40px auto; padding: 0 20px;">
+        <h2>Interactive Engineering & Web Development Solutions</h2>
+        <p>Explore the interactive elements, smooth interface transitions, and accessible designs below.</p>
+        
+        <!-- Buttons -->
+        <div style="margin: 40px 0; padding: 20px; background: var(--color-surface); border-radius: 8px;">
+            <h3>User Interface Interactivity</h3>
+            <p>Hover over these dynamic call-to-action buttons to experience the precision transition effects.</p>
+            <div style="display: flex; gap: 10px;">
+                <button class="btn btn-primary">View Portfolio</button>
+                <button class="btn btn-outline">Download CV</button>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div style="margin: 40px 0; padding: 20px; background: var(--color-surface); border-radius: 8px;">
+            <h3>Featured Projects & Case Studies</h3>
+            <p>Hover over the project card to see how smooth interface shifts highlight responsive web applications.</p>
+            <div class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Responsive Multi-Page Web Portfolio</h3>
+                    <p>A clean, fully accessible development project showcasing semantic HTML5, custom CSS layouts, and seamless responsiveness.</p>
+                    <a href="#" class="text-primary">Explore Project Documentation &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Focus States -->
+        <div style="margin: 40px 0; padding: 20px; background: var(--color-surface); border-radius: 8px;">
+            <h3>Accessibility & Keyboard Navigation</h3>
+            <p>Click on these elements, then use the <strong>Tab</strong> key to navigate. Notice the prominent, high-contrast outline tailored for user inclusivity.</p>
+            <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
+                <a href="#">Explore GitHub Repositories</a>
+                <button class="btn btn-primary">Get In Touch</button>
+                <input type="text" placeholder="Your message or inquiry..." style="padding: 8px; border: 1px solid var(--color-border); border-radius: 4px; max-width: 300px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h4>About Me</h4>
+            <p style="color: rgba(255,255,255,0.7); font-size: var(--font-sm); line-height: 1.6;">
+                I am an aspiring aeronautical engineer with a deep-seated passion for technology and web development. Driven by the precision of flight theory and the logic of coding, I bridge the gap between complex engineering concepts and clean, user-focused digital solutions.
+            </p>
+        </div>
+        <div class="footer-column">
+            <h4>Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="mailto:hello@yourname.com">Email Me</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Twitter / X</a></li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <small>&copy; 2026 Kelvin Kimotho. All rights reserved.</small>
+        </div>
+    </footer>
+
+</body>
+</html>
